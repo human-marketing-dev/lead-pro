@@ -23,23 +23,23 @@ const cormorant = Cormorant_Garamond({
  
 // ─── Metadata ────────────────────────────────────────────────────────────────
  
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://epicus.com.mx";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://leadpro.com.mx";
  
 export const metadata: Metadata = {
   title: {
-    default: "EPICUS — Asesoría Inmobiliaria en Monterrey",
-    template: "%s | EPICUS",
+    default: "LEAD PRO — Asesoría Inmobiliaria en Monterrey",
+    template: "%s | LEAD PRO",
   },
   description:
     "Asesoría e inteligencia inmobiliaria en Monterrey y área metropolitana. Acceso a 95 proyectos activos y 4,480 unidades disponibles.",
   metadataBase: new URL(siteUrl),
  
   openGraph: {
-    title: "EPICUS — Asesoría Inmobiliaria en Monterrey",
+    title: "LEAD PRO — Asesoría Inmobiliaria en Monterrey",
     description:
       "Asesoría e inteligencia inmobiliaria en Monterrey y área metropolitana.",
     url: siteUrl,
-    siteName: "EPICUS",
+    siteName: "LEAD PRO",
     locale: "es_MX",
     type: "website",
     images: [
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
         url: "/og-image-epicus.webp",
         width: 1200,
         height: 630,
-        alt: "EPICUS — Asesoría Inmobiliaria",
+        alt: "LEAD PRO — Asesoría Inmobiliaria",
       },
     ],
   },
  
   twitter: {
     card: "summary_large_image",
-    title: "EPICUS — Asesoría Inmobiliaria en Monterrey",
+    title: "LEAD PRO — Asesoría Inmobiliaria en Monterrey",
     description:
       "Asesoría e inteligencia inmobiliaria en Monterrey y área metropolitana.",
     images: ["/og-image-epicus.webp"],

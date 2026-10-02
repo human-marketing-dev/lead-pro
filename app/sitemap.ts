@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://epicus.com.mx").replace(/\/$/, "");
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://leadpro.com.mx").replace(/\/$/, "");
 
 // Solo las páginas que viven en la navegación. Nosotros, Portafolio y el home
 // anterior siguen accesibles por URL pero quedan fuera de buscadores.
