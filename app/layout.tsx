@@ -27,37 +27,37 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://leadpro.com.mx";
  
 export const metadata: Metadata = {
   title: {
-    default: "LEAD PRO — Asesoría Inmobiliaria en Monterrey",
-    template: "%s | LEAD PRO",
+    default: "Lead Pro — Asesoría Inmobiliaria en Monterrey",
+    template: "%s | Lead Pro",
   },
   description:
     "Asesoría e inteligencia inmobiliaria en Monterrey y área metropolitana. Acceso a 95 proyectos activos y 4,480 unidades disponibles.",
   metadataBase: new URL(siteUrl),
  
   openGraph: {
-    title: "LEAD PRO — Asesoría Inmobiliaria en Monterrey",
+    title: "Lead Pro — Asesoría Inmobiliaria en Monterrey",
     description:
       "Asesoría e inteligencia inmobiliaria en Monterrey y área metropolitana.",
     url: siteUrl,
-    siteName: "LEAD PRO",
+    siteName: "Lead Pro",
     locale: "es_MX",
     type: "website",
     images: [
       {
-        url: "/og-image-epicus.webp",
+        url: "/og-image-lead-pro.png",
         width: 1200,
         height: 630,
-        alt: "LEAD PRO — Asesoría Inmobiliaria",
+        alt: "Lead Pro — Asesoría Inmobiliaria",
       },
     ],
   },
  
   twitter: {
     card: "summary_large_image",
-    title: "LEAD PRO — Asesoría Inmobiliaria en Monterrey",
+    title: "Lead Pro — Asesoría Inmobiliaria en Monterrey",
     description:
       "Asesoría e inteligencia inmobiliaria en Monterrey y área metropolitana.",
-    images: ["/og-image-epicus.webp"],
+    images: ["/og-image-lead-pro.png"],
   },
  
   robots: {
@@ -69,11 +69,6 @@ export const metadata: Metadata = {
     },
   },
  
-  icons: {
-    icon: "/icons/favicon.ico",
-    shortcut: "/icons/favicon-32x32.png",
-    apple: "/icons/apple-touch-icon.png",
-  },
 };
  
 // ─── Layout ──────────────────────────────────────────────────────────────────

@@ -45,9 +45,9 @@ export async function POST(request: Request) {
       );
     }
 
-    // Email a LEAD PRO
+    // Email a Lead Pro
     await resend.emails.send({
-      from: "LEAD PRO Contacto <info@leadpro.com.mx>",
+      from: "Lead Pro Contacto <info@leadpro.com.mx>",
       to: ["info@leadpro.com.mx"],
       subject: `Nueva solicitud de asesoría — ${nombre}`,
       html: `
@@ -92,14 +92,14 @@ export async function POST(request: Request) {
 
     // Email de confirmación al usuario
     await resend.emails.send({
-      from: "LEAD PRO <info@leadpro.com.mx>",
+      from: "Lead Pro <info@leadpro.com.mx>",
       to: [correo],
-      subject: "Recibimos tu solicitud — LEAD PRO",
+      subject: "Recibimos tu solicitud — Lead Pro",
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 32px;">
           <h2 style="color: #0a1628; margin-bottom: 8px;">Hola, ${nombre}.</h2>
           <p style="color: #4b5563; font-size: 15px; line-height: 1.7; margin-bottom: 24px;">
-            Recibimos tu solicitud de asesoría. Un asesor de LEAD PRO te contactará 
+            Recibimos tu solicitud de asesoría. Un asesor de Lead Pro te contactará 
             en las próximas horas para agendar una conversación.
           </p>
           <p style="color: #4b5563; font-size: 15px; line-height: 1.7; margin-bottom: 32px;">
@@ -110,7 +110,7 @@ export async function POST(request: Request) {
           </a>
           <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e7eb;">
             <p style="margin: 0; font-size: 12px; color: #9ca3af;">
-              LEAD PRO — Asesoría Inmobiliaria · Monterrey, N.L.
+              Lead Pro — Asesoría Inmobiliaria · Monterrey, N.L.
             </p>
           </div>
         </div>

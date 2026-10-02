@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Epicus',
+  title: 'Lead Pro',
 
   projectId: 'hoq99nai',
   dataset: 'production',

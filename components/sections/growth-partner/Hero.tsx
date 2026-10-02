@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import FadeIn from "@/components/ui/FadeIn";
 
@@ -22,8 +23,8 @@ export default function GrowthPartnerHero() {
         aria-hidden
       />
 
-      <Container className="relative z-10 pt-[150px] pb-24 lg:pt-[190px] lg:pb-32">
-        <div className="max-w-[720px]">
+      <Container className="relative z-10 pt-[130px] pb-12 sm:pt-[150px] sm:pb-16 lg:pt-[190px] lg:pb-32">
+        <div className="max-w-[720px] lg:max-w-[50%]">
 
           <FadeIn delay={0}>
             <p className="flex items-center gap-3 text-overline text-blue-light mb-8">
@@ -34,14 +35,14 @@ export default function GrowthPartnerHero() {
 
           <FadeIn delay={0.1}>
             <h1 className="font-display text-h1 text-white mb-7 tracking-[-0.02em]">
-              Tú te enfocas en desarrollar;<br />
+              Tú te enfocas en desarrollar;<br className="hidden sm:block" />{" "}
               nosotros en <em className="italic text-blue-light">vender.</em>
             </h1>
           </FadeIn>
 
           <FadeIn delay={0.2}>
             <p className="text-b1 text-white/60 max-w-[560px] mb-11">
-              Growth Partner es el servicio con el que Epicus opera el área
+              Growth Partner es el servicio con el que Lead Pro opera el área
               comercial completa de un desarrollo: atracción de leads,
               procesamiento y agendamiento, dirección de ventas y cierre. El
               argumento es uno solo: velocidad de colocación.
@@ -57,17 +58,47 @@ export default function GrowthPartnerHero() {
                 Hablemos de tu proyecto
               </Link>
               <Link
-                href="/"
+                href="#desarrollador"
                 className="inline-flex items-center gap-2 hover:gap-4 text-btn text-white border border-white/25 hover:border-white/60 px-8 py-[15px] rounded-[4px] transition-all duration-200"
               >
-                Conocer Epicus
+                Conocer el servicio
                 <span aria-hidden>→</span>
               </Link>
             </div>
           </FadeIn>
 
         </div>
+
       </Container>
+
+      {/* Imagen — debajo del texto en mobile/tablet, mitad derecha en desktop */}
+      <div className="relative h-[260px] sm:h-[380px] lg:absolute lg:inset-y-0 lg:right-0 lg:h-auto lg:w-[48%]">
+        <Image
+          src="/hero-desarrollo.webp"
+          alt="Render de desarrollo residencial en Monterrey"
+          fill
+          priority
+          sizes="(min-width: 1024px) 48vw, 100vw"
+          className="object-cover"
+        />
+        {/* Velo — funde la foto con el fondo: hacia arriba en mobile, hacia el texto en desktop */}
+        <div
+          className="absolute inset-0 lg:hidden"
+          style={{
+            background:
+              "linear-gradient(180deg, #0d1528 0%, rgba(13,21,40,0.25) 35%, rgba(10,10,15,0.1) 100%)",
+          }}
+          aria-hidden
+        />
+        <div
+          className="absolute inset-0 hidden lg:block"
+          style={{
+            background:
+              "linear-gradient(90deg, #0d1830 0%, rgba(13,24,48,0.55) 30%, rgba(10,10,15,0.15) 70%, rgba(10,10,15,0.35) 100%)",
+          }}
+          aria-hidden
+        />
+      </div>
     </section>
   );
 }

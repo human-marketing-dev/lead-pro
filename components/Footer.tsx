@@ -4,13 +4,12 @@ import Image from "next/image";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const menu = [
-  { label: "Inmobiliaria",   href: "/" },
-  { label: "Growth Partner", href: "/growth-partner" },
+  { label: "Growth Partner", href: "/" },
   { label: "Contacto",       href: "/contacto" },
 ];
 
 const contacto = [
-  { label: "www.epicus.com.mx", href: "https://www.epicus.com.mx" },
+  { label: "www.leadpro.com.mx", href: "https://www.leadpro.com.mx" },
   { label: "811 538 5567",      href: "tel:+528115385567" },
   { label: "Monterrey, N.L.",   href: null },
 ];
@@ -54,14 +53,14 @@ export default function Footer() {
           {/* Boilerplate */}
           <div>
             <Image
-              src="/logo-footer-epicus.webp"
-              alt="EPICUS"
-              width={130}
-              height={44}
-              className="mb-6"
+              src="/logos/lead-pro-logo-blanco.png"
+              alt="Lead Pro"
+              width={1804}
+              height={209}
+              className="h-6 w-auto mb-6"
             />
             <p className="text-[14px] font-light text-white/75 leading-[1.9] max-w-[560px]">
-              Epicus es una firma de inteligencia inmobiliaria en Monterrey.
+              Lead Pro es una firma de inteligencia inmobiliaria en Monterrey.
               Opera como brazo comercial de los principales desarrolladores de la
               ciudad y su área metropolitana, con más de 95 proyectos activos en
               monitoreo. Esa posición le permite maximizar el rendimiento de cada
@@ -135,7 +134,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <p className="text-[12px] text-white/50">
-            © {new Date().getFullYear()} EPICUS — Todos los derechos reservados
+            © {new Date().getFullYear()} Lead Pro — Todos los derechos reservados
           </p>
           <Link
             href="/aviso-de-privacidad"

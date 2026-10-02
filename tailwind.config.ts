@@ -22,7 +22,7 @@ const config: Config = {
         dark:    "#4B5563",
       },
  
-      // Epicus
+      // Lead Pro
       blue: {
         DEFAULT: "#2563eb",
         light:   "#3b82f6",

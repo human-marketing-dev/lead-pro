@@ -7,12 +7,12 @@ export const metadata = {
   robots: { index: false, follow: false },
   title: "Nosotros",
   description:
-    "Conoce al equipo detrás de EPICUS. Somos asesores inmobiliarios en Monterrey comprometidos con construir relaciones, no transacciones.",
+    "Conoce al equipo detrás de Lead Pro. Somos asesores inmobiliarios en Monterrey comprometidos con construir relaciones, no transacciones.",
   openGraph: {
-    title: "Nosotros | EPICUS",
+    title: "Nosotros | Lead Pro",
     description:
-      "Conoce al equipo detrás de EPICUS. Asesores inmobiliarios en Monterrey comprometidos con tu mejor decisión.",
-    images: [{ url: "og-image-epicus.webp", width: 1200, height: 630 }],
+      "Conoce al equipo detrás de Lead Pro. Asesores inmobiliarios en Monterrey comprometidos con tu mejor decisión.",
+    images: [{ url: "/og-image-lead-pro.png", width: 1200, height: 630 }],
   },
 };
 

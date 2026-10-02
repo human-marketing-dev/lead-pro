@@ -10,10 +10,9 @@ import { cn } from "@/lib/utils";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 // Nosotros, Portafolio y Desarrolladores quedan fuera de la navegación.
-// Sus rutas siguen vivas (Desarrolladores redirige a Growth Partner).
+// Sus rutas siguen vivas (Desarrolladores y Growth Partner redirigen a la raíz).
 const links = [
-  { label: "Inmobiliaria",   href: "/" },
-  { label: "Growth Partner", href: "/growth-partner" },
+  { label: "Growth Partner", href: "/" },
   { label: "Contacto",       href: "/contacto" },
 ];
 
@@ -30,11 +29,11 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
           <Image
-            src="/logos/epicus-logo-black-blue.webp"
-            alt="EPICUS"
-            width={120}
-            height={32}
-            className="h-17 w-auto"
+            src="/logos/lead-pro-logo-negro.png"
+            alt="Lead Pro"
+            width={1804}
+            height={209}
+            className="h-5 md:h-6 w-auto"
             priority
           />
         </Link>

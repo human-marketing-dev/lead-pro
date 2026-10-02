@@ -149,7 +149,7 @@ export default function RutaDesarrollador({
 
               {mostrarCta && (
                 <Link
-                  href="/growth-partner"
+                  href="/"
                   className="shrink-0 inline-block bg-blue hover:bg-blue-light text-white text-btn px-8 py-[15px] rounded-[4px] transition-all duration-200 hover:-translate-y-px"
                 >
                   Conocer Growth Partner
